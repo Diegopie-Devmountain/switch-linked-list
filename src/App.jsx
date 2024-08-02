@@ -1,14 +1,38 @@
 import { useState } from "react";
 import { gamesForSelect, storeGames } from "./data/games"
+import { linkedList } from "./data/linked-list";
 
 export default function App() {
 
+  const gameList = new linkedList();
+
   const [yourGames, setYourGames] = useState([]);
+
+  const handleGameInstall = (key) => {
+    console.log(key);
+    const gameData = storeGames[key];
+    console.log(gameData);
+
+    // to do
+  }
 
   const handleRemove = (data) => {
     console.log(data);
+    // to do
   }
   
+  const gameButtons = gamesForSelect.map(((game, index) => {
+    return (
+      <button
+        key={index}
+        className="bg-slate-300 w-36"
+        onClick={() => handleGameInstall(game.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-'))}
+      >
+        {game}
+      </button>
+    )
+  }));
+
   const yourGamesList = yourGames.map((game, index) => {
     return (
       <article className="relative" key={game.id}>
@@ -20,27 +44,7 @@ export default function App() {
         <p className="w-56 text-center font-serif">{game.name}</p>
       </article>
     )
-  })
-
-  const handleGameInstall = (key) => {
-    console.log(key);
-    const gameData = storeGames[key];
-    console.log(gameData);
-
-    // to do
-  }
-
-  const gameButtons = gamesForSelect.map(((game, index) => {
-    return (
-      <button
-        key={index}
-        className="bg-slate-300 w-36"
-        onClick={() => handleGameInstall(game.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-'))}
-      >
-        {game}
-      </button>
-    )
-  }))
+  });
 
   return (
     <main>
