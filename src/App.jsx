@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { gamesForSelect, storeGames } from "./data/games.js"
 import { LinkedList } from "./data/linked-list.js";
 
 export default function App() {
 
-  const gameList = new LinkedList();
+  // const gameList = new LinkedList();
+  const gameList = useRef(new LinkedList());
 
   const [yourGames, setYourGames] = useState([]);
 
