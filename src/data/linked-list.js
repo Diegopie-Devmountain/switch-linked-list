@@ -1,5 +1,29 @@
+class Node {
 
+}
 
-export class linkedList {
-  
+export class LinkedList {
+  constructor() {
+
+  }
+
+  prepend() {
+
+  }
+
+  append() {
+
+  }
+
+  remove() {
+    
+  }
+
+  toArray() {
+
+  }
+
+  size() {
+
+  }
 }

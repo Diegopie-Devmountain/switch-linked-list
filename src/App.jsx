@@ -1,23 +1,102 @@
 import { useState } from "react";
-import { gamesForSelect, storeGames } from "./data/games"
-import { linkedList } from "./data/linked-list";
+import { gamesForSelect, storeGames } from "./data/games.js"
+import { LinkedList } from "./data/linked-list.js";
 
 export default function App() {
 
-  const gameList = new linkedList();
+  const gameList = new LinkedList();
 
-  const [yourGames, setYourGames] = useState([]);
+  const [yourGames, setYourGames] = useState([
+    {
+      id: 0,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 1,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 2,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 3,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 4,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 5,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 6,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 7,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 8,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 9,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+    {
+      id: 10,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2"
+    },
+  ]);
+
+
+  const handleRemove = (data) => {
+    console.log(data);
+    // to do
+  }
 
   const handleGameInstall = (key) => {
     console.log(key);
     const gameData = storeGames[key];
     console.log(gameData);
 
-    // to do
-  }
-
-  const handleRemove = (data) => {
-    console.log(data);
     // to do
   }
   
