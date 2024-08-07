@@ -6,7 +6,7 @@ export default function App() {
 
   const gameList = new LinkedList();
 
-  const [yourGames, setYourGames] = useState();
+  const [yourGames, setYourGames] = useState([]);
 
 
   const handleRemove = (data) => {
