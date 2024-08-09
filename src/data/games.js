@@ -123,7 +123,7 @@ export const storeGames = {
     name: "Stardew Valley", 
     fileSize: 3000, 
     batteryUse: 1,
-    coverImg: "https://picsum.photos/id/870/300/300?grayscale&blur=2",
+    coverImg: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Ringfitadventure.jpg/220px-Ringfitadventure.jpg",
     description: "Build and manage your own farm in this charming simulation game. Grow crops, raise animals, and interact with the townspeople."
   },
   "ring-fit-adventure": {
