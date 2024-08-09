@@ -7,7 +7,72 @@ export default function App() {
   // const gameList = new LinkedList();
   const gameList = useRef(new LinkedList());
 
-  const [yourGames, setYourGames] = useState([]);
+  const [yourGames, setYourGames] = useState([
+    {
+      id: 0,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 1,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 2,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 3,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 4,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 5,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 6,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+    {
+      id: 7,
+      name: "The Legend of Zelda: Breath of the Wild",
+      fileSize: 13000,
+      batteryUse: 2,
+      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
+      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
+    },
+  ]);
 
 
   const handleRemove = (data) => {
@@ -22,7 +87,7 @@ export default function App() {
 
     // to do
   }
-  
+
   const gameButtons = gamesForSelect.map(((game, index) => {
     return (
       <button
@@ -38,12 +103,12 @@ export default function App() {
   const yourGamesList = yourGames.map((game, index) => {
     return (
       <article className="relative" key={game.id}>
-        <button 
-        className="w-6 text-white absolute right-0 drop-shadow-md"
-        onClick={() => handleRemove(game)}
+        <button
+          className="w-6 text-white absolute right-0 drop-shadow-md"
+          onClick={() => handleRemove(game)}
         >X</button>
-        <img src={game.coverImg} className="w-56 h-56 object-cover" />
-        <p className="w-56 text-center font-serif">{game.name}</p>
+        <img src={game.coverImg} className="w-16 md:w-36 h-16 md:h-36 object-cover" />
+        <p className="w-16 md:w-36 text-center font-serif text-xs md:text-base">{game.name}</p>
       </article>
     )
   });
@@ -56,11 +121,19 @@ export default function App() {
           {gameButtons}
         </article>
       </section>
-      <section className="mt-14 mb-12 px-8">
-        <h2 className="text-center font-serif text-xl font-semibold">Your Games</h2>
-        <section className="mt-5 flex gap-6 overflow-x-auto">
-          {yourGamesList}
-        </section>
+      <section className="mt-12 flex justify-center h-44 md:h-80">
+        <img 
+        src="/left_joy-con.png"
+        className="h-44 md:h-80"
+        />
+        <article className="md:h-[98%] mt-2 pt-1 md:pt-5 px-8 w-[22rem] md:w-[40rem] bg-slate-100">
+          <h2 className="text-center font-serif text-sm md:text-xl font-semibold">Your Games</h2>
+          <section className="mt-2 md:mt-10 flex gap-6 overflow-x-auto h-[145px] md:h-[257px]">
+            {yourGamesList}
+          </section>
+        </article>
+        <img src="/right_joy-con.png"
+        className="h-44 md:h-80"/>
       </section>
     </main>
   )
