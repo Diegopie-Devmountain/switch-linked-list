@@ -7,72 +7,7 @@ export default function App() {
   // const gameList = new LinkedList();
   const gameList = useRef(new LinkedList());
 
-  const [yourGames, setYourGames] = useState([
-    {
-      id: 0,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 1,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 2,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 3,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 4,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 5,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 6,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-    {
-      id: 7,
-      name: "The Legend of Zelda: Breath of the Wild",
-      fileSize: 13000,
-      batteryUse: 2,
-      coverImg: "https://cdn2.steamgriddb.com/thumb/0c88b44d11d67935878e6ac8e43a4750.jpg",
-      description: "Explore a vast and beautifully designed open world in this critically acclaimed action-adventure game. Play as Link and save the kingdom of Hyrule."
-    },
-  ]);
+  const [yourGames, setYourGames] = useState([]);
 
 
   const handleRemove = (data) => {
