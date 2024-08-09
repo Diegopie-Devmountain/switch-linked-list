@@ -123,7 +123,7 @@ export const storeGames = {
     name: "Stardew Valley", 
     fileSize: 3000, 
     batteryUse: 1,
-    coverImg: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Ringfitadventure.jpg/220px-Ringfitadventure.jpg",
+    coverImg: "https://pm1.aminoapps.com/6806/f9561f65cf426dbe8dc32d021988e13e9c7631d4v2_hq.jpg",
     description: "Build and manage your own farm in this charming simulation game. Grow crops, raise animals, and interact with the townspeople."
   },
   "ring-fit-adventure": {
@@ -131,7 +131,7 @@ export const storeGames = {
     name: "Ring Fit Adventure",
     fileSize: 6000,
     batteryUse: 2,
-    coverImg: "https://pm1.aminoapps.com/6806/f9561f65cf426dbe8dc32d021988e13e9c7631d4v2_hq.jpg",
+    coverImg: "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Ringfitadventure.jpg/220px-Ringfitadventure.jpg",
     description: "Get active and explore a fantasy world through exercise. Use the Ring-Con and leg strap to complete fitness challenges and defeat enemies."
   },
   "the-witcher-3-wild-hunt": {
